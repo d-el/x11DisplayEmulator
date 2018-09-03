@@ -744,8 +744,8 @@ void outItemString(char *label, char *value, uint8_t itemNumber, menuItemSelect_
 	static const disp_color_type colorValue[] = {
         [menuItemUnselect] = white,
         [menuItemSelect] = red,
-        [menuItemUnselectUnchangeable] = halfLightGray,
-        [menuItemSelectUnchangeable] = halfLightGray,
+        [menuItemUnselectUnchangeable] = blue,
+        [menuItemSelectUnchangeable] = blue,
     };
 
 	// Delimiter
