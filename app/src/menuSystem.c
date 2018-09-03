@@ -1,8 +1,8 @@
 ﻿/*!****************************************************************************
  * @file		menuSystem.c
  * @author		Storozhenko Roman - D_EL
- * @version		V1.3
- * @date		06.061.2018
+ * @version		V1.4
+ * @date		04.09.2018
  * @copyright	The MIT License (MIT). Copyright (c) 2017 Storozhenko Roman
  * @brief		menu system
  */
@@ -367,6 +367,7 @@ void menuEngine(menuItemNumber_type menuItemNumber){
  */
 void printMessageWindow(char *string){
 	disp_fillScreen(black);
+	disp_setColor(black, white);
 	disp_putStr(0, MENU_ITEM_H, &MENU_ITEM_FONT, 0, string);
 	while(keyProc() == 0){
 		vTaskDelay(pdMS_TO_TICKS(MENU_PERIOD));
