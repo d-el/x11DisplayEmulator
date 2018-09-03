@@ -26,6 +26,7 @@ int16_t 	u16_val;
 int16_t 	i16_val;
 uint32_t 	u32_val;
 uint32_t 	ip_val;
+uint32_t    ip2_val;
 uint32_t 	time_val;
 int32_t 	i32_val;
 float 		f32_val;
@@ -107,7 +108,7 @@ static const uint8_t sizePrm[] = {
 	4,	//ipAdrFrmt
 };
 
-static uint8_t prmLoadBff[1024];
+//static uint8_t prmLoadBff[1024];
 
 /*!****************************************************************************
  * @brief	get parameter size

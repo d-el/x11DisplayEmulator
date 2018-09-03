@@ -15,6 +15,7 @@
 #include "enco.h"
 #include <X11/Xlib.h>
 #include <X11/Xutil.h>
+#include <assert.h>
 
 /******************************************************************************
  * MEMORY
@@ -34,6 +35,8 @@ void enco_init(void){
 extern Display     *display;
 
 int16_t enGeReg(void){
+    assert(display != NULL);
+
     uint8_t keys[32];
     XQueryKeymap( display, (char*)keys );
 
@@ -68,7 +71,6 @@ enStatus_type enAdd(const prmHandle_type *prmHandle, const prmval_type *prmval, 
 	int32_t s32t;
 	int64_t s64t;
 	float	ftemp;
-	extern uint32_t ipMul;
 
 	switch(prmHandle->type){
 		case u8Frmt:

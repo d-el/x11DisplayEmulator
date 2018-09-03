@@ -22,6 +22,7 @@
 //#include "ledpwm.h"
 //#include "regulatorConnTSK.h"
 #include "settingTSK.h"
+#include "stdio.h"
 
 /*!****************************************************************************
  * MEMORY
@@ -54,6 +55,26 @@ itemState_type PrepareU(const menuItem_type *item){
 //	}else{
 		return (itemState_type) {.state = menuItemOk};
 //	}
+}
+
+itemState_type selI(const menuItem_type *item){
+    printf("Select I\n");
+    return (itemState_type) {.state = menuItemOk};
+}
+
+itemState_type uselI(const menuItem_type *item){
+    printf("Unselect I\n");
+    return (itemState_type) {.state = menuItemOk};
+}
+
+itemState_type selU(const menuItem_type *item){
+    printf("Select U\n");
+    return (itemState_type) {.state = menuItemOk};
+}
+
+itemState_type uselU(const menuItem_type *item){
+    printf("Unselect U\n");
+    return (itemState_type) {.state = menuItemOk};
 }
 
 /*!****************************************************************************

@@ -18,7 +18,7 @@
  * Define
  */
 #define KEY_NUM				( 7 )
-#define KEY_SAMPLES			( 2 )
+#define KEY_SAMPLES			( 1 )
 
 /*!****************************************************************************
  * Enumeration

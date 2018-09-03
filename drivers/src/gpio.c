@@ -17,7 +17,7 @@
 #include <X11/Xlib.h>
 #include <X11/Xutil.h>
 #include <stdio.h>
-#include <X11/keysymdef.h>
+#include <assert.h>
 
 extern Display     *display;
 
@@ -29,6 +29,8 @@ void gpio_init(void){
 }
 
 uint32_t gppin_get(GPnum_type n){
+    assert(display != NULL);
+
     uint8_t keys[32];
     XQueryKeymap( display, (char*)keys );
 #if(0)

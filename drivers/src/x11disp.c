@@ -14,7 +14,7 @@ void *lcd_TSK(void *pPrm);
 static lcd_color_type	framebuffer[X11DISP_W][X11DISP_H] = { { 0 }, };
 static char			imagedata[8 * X11DISP_W * X11DISP_H * (PIXEL_SIZE * PIXEL_SIZE)];
 /*static*/ Display		*display;
-static Window		window;
+/*static*/ Window		window;
 static int			screen;
 static XColor		l_black, l_red, l_green, l_yellow, l_blue, l_magenta, l_cyan, l_white;
 static long 		colors[8];

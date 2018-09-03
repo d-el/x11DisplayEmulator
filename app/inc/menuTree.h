@@ -8,7 +8,7 @@
  */
 
 /*		name 			,label		,units	,prmHandle			,chmod				,pfPrm	,pfChanges	,pfSelect	,pfUnselect	,pfPeriod	,previous	,next		,parent		,child	*/
-MENU_ITEM(voltmeter		,"Vmeter"	,""		,NULL				,chmodMenuAlways	,0		,NULL		,NULL		,NULL		,NULL		,voltmeter	,ammeter	,voltmeter	,vPoint1)
+MENU_ITEM(voltmeter		,"Vmeter"	,""		,NULL				,chmodMenuAlways	,0		,NULL		,selU		,uselU		,NULL		,voltmeter	,ammeter	,voltmeter	,vPoint1)
 	/*		name 			,label		,units	,prmHandle			,chmod				,pfPrm	,pfChanges	,pfSelect	,pfUnselect	,pfPeriod	,previous	,next		,parent		,child	*/
 	MENU_ITEM(vPoint1		,"Point1"	,""		,NULL				,chmodMenuAlways	,0		,NULL		,PrepareU	,regSave	,NULL		,vPoint1	,vPoint2	,voltmeter	,vSetU)
 	MENU_ITEM(vPoint2		,"Point2"	,""		,NULL				,chmodMenuAlways	,1		,NULL		,PrepareU	,regSave	,NULL		,vPoint1	,vPoint3	,voltmeter	,vSetU)
@@ -22,7 +22,7 @@ MENU_ITEM(voltmeter		,"Vmeter"	,""		,NULL				,chmodMenuAlways	,0		,NULL		,NULL		
 		MENU_ITEM(vSetMEasU		,"Umeas"	,"V"	,&prmh[Nmeas_u]		,chmodMenuNone		,0		,NULL		,NULL		,NULL		,NULL		,vSetAdcI	,vSetMEasU	,vPoint1	,vSetMEasU)
 
 /*		name 			,label		,units	,prmHandle			,chmod				,pfPrm	,pfChanges	,pfSelect	,pfUnselect	,pfPeriod	,previous	,next		,parent		,child	*/
-MENU_ITEM(ammeter		,"Ameter"	,""		,NULL				,chmodMenuAlways	,0		,NULL		,NULL		,NULL		,NULL		,voltmeter	,datetime	,ammeter	,iPoint1)
+MENU_ITEM(ammeter		,"Ameter"	,""		,NULL				,chmodMenuAlways	,0		,NULL		,selI		,uselI		,NULL		,voltmeter	,datetime	,ammeter	,iPoint1)
 	/*		name 			,label		,units	,prmHandle			,chmod				,pfPrm	,pfChanges	,pfSelect	,pfUnselect	,pfPeriod	,previous	,next		,parent		,child	*/
 	MENU_ITEM(iPoint1		,"Point1"	,""		,NULL				,chmodMenuAlways	,0		,NULL		,PrepareI	,regSave	,NULL		,iPoint1	,iPoint2	,voltmeter	,iSetI)
 	MENU_ITEM(iPoint2		,"Point2"	,""		,NULL				,chmodMenuAlways	,1		,NULL		,PrepareI	,regSave	,NULL		,iPoint1	,iPoint3	,voltmeter	,iSetI)

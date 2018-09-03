@@ -69,6 +69,7 @@ void disp_setColor(lcd_color_type backgroundColor, lcd_color_type contentColor);
 void disp_setBackgroundColor(lcd_color_type backgroundColor);
 void disp_setContentColor(lcd_color_type contentColor);
 void disp_setPixel(int16_t x, int16_t y, lcd_color_type color);
+void disp_flush(void);
 void disp_fillScreen(lcd_color_type color);
 void disp_fillRect(int16_t x, int16_t y, int16_t w, int16_t h, lcd_color_type color);
 void disp_putChar(int16_t x, int16_t y, const font_type *font, char c);

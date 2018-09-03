@@ -46,6 +46,13 @@ typedef enum {
 	menuItemError
 } menuItemState_type;
 
+typedef enum {
+    menuItemUnselect,
+    menuItemSelect,
+    menuItemUnselectUnchangeable,
+    menuItemSelectUnchangeable
+} menuItemSelect_type;
+
 typedef union {
 	struct {
 		int16_t istext :1;

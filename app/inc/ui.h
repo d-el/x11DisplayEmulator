@@ -12,6 +12,7 @@
  * Include
  */
 #include "stdint.h"
+#include "display.h"
 
 /*!****************************************************************************
  * User define
@@ -25,12 +26,12 @@
  * User typedef
  */
 typedef struct {
-	int16_t cursor;
-	int16_t voltage;
-	int16_t current;
-	int16_t capacity;
-	int16_t imax;
-	int16_t mode;
+    disp_color_type cursor;
+    disp_color_type voltage;
+    disp_color_type current;
+	disp_color_type capacity;
+	disp_color_type imax;
+	disp_color_type mode;
 } uicolor_type;
 
 typedef struct {

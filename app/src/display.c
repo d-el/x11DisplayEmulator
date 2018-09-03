@@ -52,6 +52,13 @@ void disp_setPixel(int16_t x, int16_t y, disp_color_type color){
 /*!****************************************************************************
  *
  */
+void disp_flush(void){
+    lcd_flush();
+}
+
+/*!****************************************************************************
+ *
+ */
 void disp_fillScreen(disp_color_type color){
 	for(uint32_t x = 0; x < DISP_W; x++){
 		for(uint32_t y = 0; y < DISP_H; y++){
